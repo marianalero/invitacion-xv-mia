@@ -311,38 +311,15 @@
 		var selNumInv = $( "#selNumInv" ).val();
 		var radioValue = $("input[name='confirm']:checked").val();
 		if(radioValue == "confirm"){
-			confirmText += "%20quiero%20confirmar%20mi%20asistencia%20para%20la%20quinceañera%20de%20Mia.Número de personas:"+selNumInv;
+			confirmText += "%20quiero%20confirmar%20mi%20asistencia%20para%20la%20quinceañera%20de%20Mia.Mi nombre es "+name+".Número de personas:"+selNumInv;
 		}
 		else
 		{
-			confirmText+="%20lamentablemente%20no%20podré%20asistir%20a%20la%20quinceañera%20de%20Mia.";
+			confirmText+="%20lamentablemente%20no%20podré%20asistir%20a%20la%20quinceañera%20de%20Mia.Mi nombre es"+name+".";
 		}
 	
 
 		window.open("https://wa.me/+16024417172/?text="+ confirmText,"_blank");
-	 	
-		
-	
-	}
-	document.getElementById("confirmarDOS").addEventListener("click", confirmar);
-	function confirmar(){
-		var name = document.getElementById("name").value
-	
-		var number = document.getElementById("numInv").innerHTML;
-		number = number.substring(30,32);
-		var confirmText = "Hola,";
-		var selNumInv = $( "#selNumInv" ).val();
-		var radioValue = $("input[name='confirm']:checked").val();
-		if(radioValue == "confirm"){
-			confirmText += "%20quiero%20confirmar%20mi%20asistencia%20para%20la%20quinceañera%20de%20Mia.Número de personas:"+selNumInv;
-		}
-		else
-		{
-			confirmText+="%20lamentablemente%20no%20podré%20asistir%20a%20la%20quinceañera%20de%20Mia.";
-		}
-	
-
-		window.open("https://wa.me/+16024417171/?text="+ confirmText,"_blank");
 	 	
 		
 	
